@@ -24,7 +24,7 @@ mydf[["id"]] <- newid
 disid<-read.dbf("Districts.dbf")
 #add ID column into the data
 disid$id <- seq.int(nrow(disid))
-#rename column 1 to density
+#rename column 1 to district
 colnames(disid)[1] <- "district"
 
 #import csv file
